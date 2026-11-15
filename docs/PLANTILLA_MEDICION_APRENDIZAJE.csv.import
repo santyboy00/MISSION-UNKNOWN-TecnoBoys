@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://djlplniw6baid"
+
+[deps]
+
+source_file="res://docs/PLANTILLA_MEDICION_APRENDIZAJE.csv"
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

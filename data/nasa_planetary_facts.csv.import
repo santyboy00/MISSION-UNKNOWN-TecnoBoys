@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cu8gh6pg5iabw"
+
+[deps]
+
+files=["res://data/nasa_planetary_facts.gravity.translation", "res://data/nasa_planetary_facts.escape.translation", "res://data/nasa_planetary_facts.diameter.translation", "res://data/nasa_planetary_facts.mean.translation", "res://data/nasa_planetary_facts.pressure.translation", "res://data/nasa_planetary_facts.irradiance.translation"]
+
+source_file="res://data/nasa_planetary_facts.csv"
+dest_files=["res://data/nasa_planetary_facts.gravity.translation", "res://data/nasa_planetary_facts.escape.translation", "res://data/nasa_planetary_facts.diameter.translation", "res://data/nasa_planetary_facts.mean.translation", "res://data/nasa_planetary_facts.pressure.translation", "res://data/nasa_planetary_facts.irradiance.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

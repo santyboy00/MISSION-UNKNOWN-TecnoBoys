@@ -1,0 +1,37 @@
+{
+  "title": "Acceso a datos orbitales NASA PDS, catalogo de instrumentos",
+  "retrieved_utc": "2026-11-15",
+  "description": "Enlaces a colecciones PDS y sus instrumentos; el proyecto no descarga productos PDS ni afirma procesar cubos espectrales crudos.",
+  "source": "https://ode.rsl.wustl.edu/",
+  "destinations": [
+    {
+      "name": "LUNA",
+      "mission": "LRO",
+      "instruments": [
+        "LEND",
+        "LROC",
+        "Diviner"
+      ],
+      "archive": "https://ode.rsl.wustl.edu/"
+    },
+    {
+      "name": "VENUS",
+      "mission": "Magellan",
+      "instruments": [
+        "Radar System",
+        "Radio Science"
+      ],
+      "archive": "https://ode.rsl.wustl.edu/"
+    },
+    {
+      "name": "MARTE",
+      "mission": "Mars Reconnaissance Orbiter",
+      "instruments": [
+        "CRISM",
+        "HiRISE",
+        "CTX"
+      ],
+      "archive": "https://ode.rsl.wustl.edu/"
+    }
+  ]
+}

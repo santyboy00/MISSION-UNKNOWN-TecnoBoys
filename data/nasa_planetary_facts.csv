@@ -1,0 +1,5 @@
+body,gravity_m_s2,escape_km_s,diameter_km,mean_temp_c,pressure_bars,irradiance_w_m2
+TIERRA,9.8,11.2,12756,15.0,1.0,1361.0
+LUNA,1.6,2.4,3475,-20.0,0.0,1361.0
+VENUS,8.9,10.4,12104,464.0,92.0,2601.3
+MARTE,3.7,5.0,6792,-65.0,0.01,586.2

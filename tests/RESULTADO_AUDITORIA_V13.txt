@@ -1,0 +1,1 @@
+PASS V13 STATIC: 14 scenes, 27 scripts, 147 valid resource references, NASA table 4 bodies, navigation and score rules present. NOT a Godot execution test.

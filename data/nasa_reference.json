@@ -1,0 +1,107 @@
+{
+  "title": "MISSION UNKNOWN - datos NASA/JPL auditables (no efemérides instantáneas)",
+  "retrieved": "2026-11-15",
+  "units": {
+    "a": "UA (semieje mayor orbital)",
+    "irradiance": "W/m2 en el plano perpendicular a la radiación",
+    "moon_distance": "km",
+    "transfer": "días terrestres"
+  },
+  "constants": {
+    "earth_orbit_au": 1.00000261,
+    "venus_orbit_au": 0.72333566,
+    "mars_orbit_au": 1.52371034,
+    "earth_sidereal_year_days": 365.256,
+    "moon_mean_distance_km": 384400,
+    "solar_irradiance_at_1au_w_m2": 1360.8,
+    "speed_of_light_km_s": 299792.458,
+    "moon_reference_transit_days": 3.0,
+    "earth_orbital_speed_km_s": 29.78
+  },
+  "destinations": [
+    {
+      "id": "moon",
+      "name": "LUNA",
+      "reference_days": 3.0,
+      "description": "Tres días es una referencia de viaje Apollo, no solución de transferencia automática",
+      "source_ids": [
+        "moon",
+        "apollo"
+      ]
+    },
+    {
+      "id": "venus",
+      "name": "VENUS",
+      "orbit_au": 0.72333566,
+      "description": "Semieje mayor promedio a partir de los elementos JPL, sin calcular ventanas de lanzamiento",
+      "source_ids": [
+        "jpl",
+        "solar"
+      ]
+    },
+    {
+      "id": "mars",
+      "name": "MARTE",
+      "orbit_au": 1.52371034,
+      "description": "Semieje mayor promedio JPL, sin perturbaciones ni captura orbital",
+      "source_ids": [
+        "jpl",
+        "solar"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "jpl",
+      "title": "JPL Solar System Dynamics - Approximate Positions of the Planets, Table 1 (1800-2050)",
+      "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+      "used_for": [
+        "Earth, Venus, Mars semi-major orbital axes"
+      ],
+      "note": "La tabla proporciona elementos orbitales ajustados en un intervalo temporal: EM Bary es el baricentro Tierra-Luna. No son distancias Tierra-planeta."
+    },
+    {
+      "id": "moon",
+      "title": "NASA Science - Moon Facts",
+      "url": "https://science.nasa.gov/moon/facts/",
+      "used_for": [
+        "384400 km average Earth-Moon distance"
+      ]
+    },
+    {
+      "id": "apollo",
+      "title": "NASA Science — Journey to the Moon",
+      "url": "https://science.nasa.gov/resource/journey-to-the-moon/",
+      "used_for": [
+        "Three-day Apollo reference for lunar journey"
+      ],
+      "note": "Referencia histórica aproximada de tres días para viaje Apollo, NO duración garantizada para una sonda."
+    },
+    {
+      "id": "solar",
+      "title": "NASA JPL Education - Calculating Solar Power in Space",
+      "url": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/calculating-solar-power-in-space/",
+      "used_for": [
+        "1360.8 W/m2 solar irradiance at 1AU",
+        "inverse-square solar power"
+      ]
+    },
+    {
+      "id": "rocket",
+      "title": "NASA Glenn - Ideal Rocket Equation",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/",
+      "used_for": [
+        "Description of relation between propellant and delta-v; not used directly in launch vehicle ratings"
+      ]
+    },
+    {
+      "id": "nasa-flight",
+      "title": "NASA Basics of Space Flight - The Solar System",
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter1-2/",
+      "used_for": [
+        "Reference orbital period and distance comparisons",
+        "Earth approximate orbital velocity 29.78 km/s"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "NASA NSSDC Planetary Fact Sheet (metric)",
+  "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+  "source_last_updated": "2026-11-13",
+  "accessed": "2026-11-15",
+  "transformation": "Manual transcription of four columns into CSV with uniform units. Earth, Moon, Venus and Mars. Planetary fact-sheet summary rounded values. Pressure for Mars displayed as 0.01 bar, rounded.",
+  "not": "Not spacecraft raw telemetry or an active NASA API; no live ephemerides.",
+  "units": {
+    "gravity_m_s2": "m/s^2",
+    "escape_km_s": "km/s",
+    "diameter_km": "km",
+    "mean_temp_c": "C",
+    "pressure_bars": "bar",
+    "irradiance_w_m2": "W/m^2"
+  },
+  "note": "For irradiance use NASA individual planetary fact sheets: https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html ; https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html ; https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+}

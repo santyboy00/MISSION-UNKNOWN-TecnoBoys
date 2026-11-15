@@ -1,0 +1,5 @@
+LUNA: 10 kg weight 16.0 N; escape 21% Earth; solar flux 100% Earth
+VENUS: 10 kg weight 89.0 N; escape 93% Earth; solar flux 191% Earth
+MARTE: 10 kg weight 37.0 N; escape 45% Earth; solar flux 43% Earth
+PASS Δv monotonic and nonnegative across 3 hypothetical spacecraft configurations
+PASS prior mirror regression: 3 playable configurations, wins and losses; V13 Godot simulation still requires engine-run test

@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "title": "Evidencia científica NASA integrada (resúmenes, no datos crudos ni mediciones nuevas)",
+    "updated": "2026-11-15",
+    "licence": "Resumen y enlace a fuentes oficiales NASA/JPL; parámetros de juego simulados"
+  },
+  "missions": {
+    "moon": [
+      {
+        "id": "LRO-01",
+        "mission": "LRO/LEND",
+        "instrument": "neutron",
+        "metric": "Distribución del hidrógeno",
+        "fact": "LEND produce mapas de hidrógeno a partir de neutrones para buscar indicios de hielo de agua en la Luna.",
+        "question": "¿Qué instrumento tiene la mejor capacidad para investigar hidrógeno relacionado con hielo polar?",
+        "options": [
+          "Cámara óptica",
+          "Detector de neutrones",
+          "Antena de comunicaciones"
+        ],
+        "answer": 1,
+        "why": "LEND usa medidas de neutrones para cartografiar hidrógeno; no identifica por sí solo agua pura.",
+        "source": "https://science.nasa.gov/mission/lro/spacecraft-and-instruments/"
+      },
+      {
+        "id": "LRO-02",
+        "mission": "LRO/LROC",
+        "instrument": "camera",
+        "metric": "Imágenes de la superficie",
+        "fact": "LROC devuelve imágenes de alta resolución para estudiar cráteres, iluminación polar y zonas de aterrizaje.",
+        "question": "¿Qué observación ayudaría a elegir un lugar de aterrizaje por su topografía?",
+        "options": [
+          "Imágenes de alta resolución",
+          "Intensidad de señal por sí sola",
+          "Cantidad de propulsante"
+        ],
+        "answer": 0,
+        "why": "La cámara ayuda a identificar peligros y relieve; una imagen sola no prueba presencia de hielo.",
+        "source": "https://science.nasa.gov/mission/lro/spacecraft-and-instruments/"
+      },
+      {
+        "id": "LRO-03",
+        "mission": "LCROSS/LRO",
+        "instrument": "spectro",
+        "metric": "Hielo en cráteres sombreados",
+        "fact": "LCROSS y LRO aportaron evidencia de hielo de agua en material expulsado por un impacto en una región permanentemente sombreada.",
+        "question": "¿Cuál es la conclusión científicamente más cuidadosa?",
+        "options": [
+          "No existe hielo en la Luna",
+          "La Luna está cubierta por océanos",
+          "Hay evidencia de hielo en algunas regiones frías y sombreadas"
+        ],
+        "answer": 2,
+        "why": "La evidencia está relacionada con ubicaciones y condiciones específicas; no implica océanos.",
+        "source": "https://science.nasa.gov/moon/moon-water-and-ices/"
+      }
+    ],
+    "venus": [
+      {
+        "id": "MAG-01",
+        "mission": "Magellan",
+        "instrument": "radar",
+        "metric": "98 % de superficie cartografiada",
+        "fact": "Magellan terminó su tercera campaña de mapeo en 1992 con cobertura de radar de aproximadamente 98 % de la superficie de Venus.",
+        "question": "¿Por qué el radar fue especialmente útil para cartografiar Venus?",
+        "options": [
+          "Atraviesa las densas nubes que dificultan la visión óptica",
+          "No necesita comunicar datos",
+          "Elimina la presión superficial"
+        ],
+        "answer": 0,
+        "why": "El radar permite observar rasgos de la superficie bajo la espesa cubierta nubosa.",
+        "source": "https://science.nasa.gov/mission/magellan/"
+      },
+      {
+        "id": "VEN-02",
+        "mission": "NASA Venus Facts",
+        "instrument": "spectro",
+        "metric": "Atmósfera dominada por CO₂",
+        "fact": "NASA describe una atmósfera venusina principalmente de dióxido de carbono, con nubes de ácido sulfúrico.",
+        "question": "¿Qué conjunto de instrumentos ayuda más a estudiar la composición de la atmósfera?",
+        "options": [
+          "Motor y tanque de combustible",
+          "Espectrómetro y sensores atmosféricos",
+          "Paneles solares solos"
+        ],
+        "answer": 1,
+        "why": "Las mediciones espectrales ayudan a estudiar composición; el juego representa esa capacidad de modo simplificado.",
+        "source": "https://science.nasa.gov/venus/venus-facts/"
+      },
+      {
+        "id": "VEN-03",
+        "mission": "NASA Venus Facts",
+        "instrument": "camera",
+        "metric": "467 °C; ~93 atm en superficie",
+        "fact": "NASA informa aproximadamente 467 °C y 93 veces la presión terrestre al nivel del mar en la superficie de Venus.",
+        "question": "¿Qué interpretación es correcta para una sonda orbital?",
+        "options": [
+          "La sonda experimenta automáticamente 467 °C en órbita",
+          "Estas condiciones son del suelo; la órbita tiene otro entorno térmico",
+          "Venus no tiene atmósfera"
+        ],
+        "answer": 1,
+        "why": "Esos extremos describen la superficie, no la temperatura directa de la sonda orbital.",
+        "source": "https://science.nasa.gov/venus/venus-facts/"
+      }
+    ],
+    "mars": [
+      {
+        "id": "MRO-01",
+        "mission": "MRO/CRISM",
+        "instrument": "spectro",
+        "metric": "362–3920 nm; resolución espectral",
+        "fact": "CRISM mide luz visible e infrarroja para identificar minerales que pueden haberse formado en presencia de agua. NASA documenta una cobertura espectral de 362 a 3920 nm.",
+        "question": "¿Qué observación apoyaría una hipótesis de interacción antigua entre agua y roca?",
+        "options": [
+          "Solo el color rojo del planeta",
+          "Firmas espectrales de minerales hidratados",
+          "Una caída momentánea de la señal"
+        ],
+        "answer": 1,
+        "why": "La identificación mineral requiere analizar patrones espectrales, no solo una fotografía a color.",
+        "source": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/science-instruments/"
+      },
+      {
+        "id": "MRO-02",
+        "mission": "MRO/HiRISE",
+        "instrument": "camera",
+        "metric": "Imágenes orbitales de alta resolución",
+        "fact": "MRO obtiene imágenes detalladas de la superficie de Marte, útiles para interpretar la geología y seleccionar áreas de investigación.",
+        "question": "¿Qué instrumento es más apropiado para reconocer formas del terreno desde órbita?",
+        "options": [
+          "Cámara de alta resolución",
+          "Batería de reserva",
+          "Receptor terrestre de mando"
+        ],
+        "answer": 0,
+        "why": "Las cámaras orbitales permiten reconocer rasgos geológicos; no identifican todos los minerales por sí solas.",
+        "source": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/"
+      },
+      {
+        "id": "MRO-03",
+        "mission": "MRO/SHARAD",
+        "instrument": "radar",
+        "metric": "Investigación del subsuelo",
+        "fact": "El radar SHARAD de MRO investiga estructuras bajo la superficie para comprender depósitos y posibles señales de agua helada.",
+        "question": "¿Qué instrumento aporta información complementaria sobre estructuras bajo la superficie?",
+        "options": [
+          "El color de los paneles",
+          "La antena solo para voz",
+          "Radar de penetración"
+        ],
+        "answer": 2,
+        "why": "Un radar adecuado permite estudiar estratos del subsuelo; el hallazgo no equivale a detectar vida.",
+        "source": "https://science.nasa.gov/resource/the-mars-reconnaissance-orbiter/"
+      }
+    ]
+  },
+  "external_sources": [
+    {
+      "id": "JPL-ORB",
+      "title": "JPL — Approximate Positions of the Planets",
+      "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html"
+    },
+    {
+      "id": "NASA-DSN",
+      "title": "NASA — Deep Space Network",
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter18-1/"
+    },
+    {
+      "id": "NASA-ROCKET",
+      "title": "NASA — Gravity & Mechanics / Rocket Equation",
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter3-2/"
+    },
+    {
+      "id": "NASA-LRO",
+      "title": "NASA — Lunar Reconnaissance Orbiter instruments",
+      "url": "https://science.nasa.gov/mission/lro/spacecraft-and-instruments/"
+    },
+    {
+      "id": "NASA-MAG",
+      "title": "NASA — Magellan",
+      "url": "https://science.nasa.gov/mission/magellan/"
+    },
+    {
+      "id": "NASA-MRO",
+      "title": "NASA — MRO CRISM instrument",
+      "url": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/science-instruments/"
+    }
+  ]
+}

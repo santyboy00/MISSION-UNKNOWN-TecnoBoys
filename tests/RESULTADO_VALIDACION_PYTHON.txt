@@ -1,0 +1,13 @@
+CONFIG 0 {'valid': True, 'power': 51, 'fuel': 98, 'comm': 93, 'science_potential': 28, 'budget_left': 20, 'solar_factor': 0.9999971290112402, 'mass': 92, 'cost': 155}
+win 0 failed False  success True progress 10 route 1 pwr 18.4 day 8.2
+lose 0 failed True power success False progress 9 route 0.94 pwr 0 day 8.4
+CONFIG 1 {'valid': True, 'power': 49, 'fuel': 67, 'comm': 93, 'science_potential': 72, 'budget_left': 47, 'solar_factor': 1.33, 'mass': 112, 'cost': 188}
+win 1 failed False  success True progress 10 route 1 pwr 21.0 day 167.1
+lose 1 failed True power success False progress 8 route 0.92 pwr 0 day 135.8
+CONFIG 2 {'valid': True, 'power': 14, 'fuel': 64, 'comm': 93, 'science_potential': 72, 'budget_left': 47, 'solar_factor': 0.6868960722059194, 'mass': 136, 'cost': 248}
+win 2 failed False  success True progress 10 route 1 pwr 7.9 day 304.1
+lose 2 failed True power success False progress 7 route 0.77 pwr 0 day 207.0
+NASA calculation 0 3 d 1360.79 W/m2
+NASA calculation 1 146.08 d 2600.85 W/m2
+NASA calculation 2 258.87 d 586.12 W/m2
+VALIDATION V11 PASSED: 3 missions, 9 evidence cases, NASA math, winning/losing paths

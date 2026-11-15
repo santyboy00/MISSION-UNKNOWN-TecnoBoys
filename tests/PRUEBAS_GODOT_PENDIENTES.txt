@@ -1,0 +1,8 @@
+No hay ejecutable Godot en el entorno de construcción y no se pudieron descargar ejecutables externos.
+Por eso los tests `test_v13_engine.gd`, `ui_smoke_v13.gd`, `test_suite.gd` y `test_scroll_layout.gd` se incluyen pero NO se ejecutaron.
+Para ejecutarlos en Godot desde el directorio del proyecto:
+  godot --headless --path . --script res://tests/test_v13_engine.gd
+  godot --headless --path . --script res://tests/ui_smoke_v13.gd
+  godot --headless --path . --script res://tests/test_suite.gd
+  godot --headless --path . --script res://tests/test_scroll_layout.gd
+También hacer una prueba visual a 1280x720 de todas las escenas.
