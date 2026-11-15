@@ -1,0 +1,45 @@
+extends Control
+# Datos publicados por NASA/JPL + cálculos de dos cuerpos (no efemérides reales).
+const UI = preload("res://scripts/ui_kit.gd")
+const NASA = preload("res://scripts/nasa_data.gd")
+
+func _ready() -> void:
+    var page: Dictionary = UI.page($Interface,"FUENTES", "DATOS NASA / JPL", "Diferencia entre mediciones astronómicas, cálculos simplificados y reglas de juego")
+    var content: HBoxContainer = UI.row(page["body"], 14, true)
+    var left: VBoxContainer = UI.panel(content,1.35)
+    UI.label(left,"REFERENCIAS FÍSICAS COMPROBABLES",17,UI.CYAN,26)
+    UI.label(left,"LUNA · distancia media",12,UI.ORANGE,18)
+    UI.label(left,"384 400 km desde la Tierra · retardo radio de un sentido: %.2f s" % NASA.lunar_signal_seconds(),13,UI.TEXT,42)
+    UI.label(left,"Tiempo de viaje de referencia Apollo: %.0f días (NO tiempo orbital calculado)." % NASA.MOON_REFERENCE_DAYS,11,UI.MUTED,32)
+    for id in [1,2]:
+        UI.label(left,"VENUS" if id==1 else "MARTE",13,UI.ORANGE,18)
+        UI.label(left,"Semieje mayor: %.4f UA  |  irradiancia: %.0f W/m²" % [NASA.orbit_au(id),NASA.solar_flux_wm2(id)],12,UI.TEXT,20)
+        UI.label(left,"Hohmann: %.1f días · impulso heliocéntrico ideal: %.2f km/s" % [NASA.ideal_transfer_days(id),NASA.ideal_departure_delta_v_kms(id)],12,UI.TEXT,24)
+    UI.spacer(left,true)
+    UI.label(left,"Los valores del juego: créditos, puntos de vida, gastos y opciones son ficticios; la fórmula solar está basada en NASA.",12,UI.MUTED,52)
+    var right: VBoxContainer = UI.panel(content,1.0)
+    var bibliography: VBoxContainer = UI.scroll_column(right)
+    UI.label(bibliography,"FUENTES ORIGINALES · NASA / JPL",16,UI.CYAN,23)
+    UI.label(bibliography,"Hallazgos científicos del juego: LRO/LEND, Magellan y MRO/CRISM.",11,UI.MUTED,47)
+    UI.button(bibliography,"LRO · HIELO Y NEUTRONES").pressed.connect(_open.bind("https://science.nasa.gov/mission/lro/spacecraft-and-instruments/"))
+    UI.button(bibliography,"MAGELLAN · RADAR VENUS").pressed.connect(_open.bind("https://science.nasa.gov/mission/magellan/"))
+    UI.button(bibliography,"MRO · ESPECTRÓMETRO CRISM").pressed.connect(_open.bind("https://science.nasa.gov/mission/mars-reconnaissance-orbiter/science-instruments/"))
+    UI.label(bibliography,"ARCHIVO DE DATOS DE MISIONES NASA (PDS)",13,UI.CYAN,26)
+    UI.label(bibliography,"PDS ODE permite consultar productos de LRO, Magellan y MRO. El juego usa referencias, no importa datos crudos.",12,UI.MUTED,62)
+    UI.button(bibliography,"BUSCAR OBSERVACIONES EN PDS ↗").pressed.connect(_open.bind("https://ode.rsl.wustl.edu/"))
+    UI.label(bibliography,"1. JPL: elementos orbitales aproximados (1800–2050)",12,UI.TEXT,37)
+    UI.button(bibliography,"ABRIR JPL · ÓRBITAS").pressed.connect(_open.bind("https://ssd.jpl.nasa.gov/planets/approx_pos.html"))
+    UI.label(bibliography,"2. NASA Science: Luna, distancia y órbita",12,UI.TEXT,35)
+    UI.button(bibliography,"ABRIR NASA · LUNA").pressed.connect(_open.bind("https://science.nasa.gov/moon/facts/"))
+    UI.label(bibliography,"3. NASA/JPL Education: ley inversa del cuadrado y 1360.8 W/m²",12,UI.TEXT,50)
+    UI.button(bibliography,"ABRIR NASA/JPL · ENERGÍA").pressed.connect(_open.bind("https://www.jpl.nasa.gov/edu/resources/lesson-plan/calculating-solar-power-in-space/"))
+    UI.spacer(bibliography,true)
+    UI.label(bibliography,"No se calcula ventana de lanzamiento, encuentro planetario, órbita de inserción ni turbulencias solares reales.",12,UI.ORANGE,61)
+    var foot: HBoxContainer = page["footer"]
+    UI.button(foot,"← MENÚ",false,140).pressed.connect(func():get_tree().change_scene_to_file("res://scenes/main_menu.tscn"))
+    UI.spacer(foot)
+    UI.button(foot,"EXPLORAR DATOS  →",false,190).pressed.connect(func():get_tree().change_scene_to_file("res://scenes/data_explorer.tscn"))
+    UI.button(foot,"JUGAR  →",true,170).pressed.connect(func():get_tree().change_scene_to_file("res://scenes/mission_select.tscn"))
+
+func _open(url: String) -> void:
+    OS.shell_open(url)
